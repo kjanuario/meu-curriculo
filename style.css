@@ -1,0 +1,380 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root{
+    --cor-topo: #0f172a;
+    --cor-esquerda: #1e293b;
+    --cor-direita: #f8fafc;
+
+    --texto-claro: #ffffff;
+    --texto-escuro: #1e293b;
+
+    --destaque: #38bdf8;
+    --barra-fundo: #cbd5e1;
+    --sombra: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+body{
+    background: #d6d6d6;
+    padding: 40px 20px;
+    color: var(--texto-escuro);
+}
+
+/* =========================
+   LAYOUT PRINCIPAL
+========================= */
+
+.container{
+    max-width: 1200px;
+
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto 1fr;
+
+    margin: 0 auto;
+
+    background: white;
+
+    box-shadow:
+        0 0 30px rgba(0,0,0,0.15),
+        0 0 80px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   TOPO
+========================= */
+
+.topo{
+    grid-column: 1 / 3;
+
+    background: var(--cor-topo);
+    color: var(--texto-claro);
+
+    padding: 40px;
+    box-shadow: var(--sombra);
+}
+
+.info_pessoais{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+/* =========================
+   SOBRE MIM
+========================= */
+
+.sobre_mim{
+    background: rgba(255,255,255,0.08);
+    padding: 25px;
+    border-radius: 15px;
+    min-height: 200px;
+
+    display: flex;
+    align-items: center;
+
+    box-shadow: var(--sombra);
+}
+
+.sobre_mim p{
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* =========================
+   FOTO + NOME
+========================= */
+
+.info_imagem{
+    text-align: center;
+}
+
+.info_imagem h1{
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.info_imagem h2{
+    color: var(--destaque);
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.foto-perfil{
+    width: 220px;
+    height: 220px;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 5px solid var(--destaque);
+
+    box-shadow: var(--sombra);
+}
+
+/* =========================
+   CONTATOS
+========================= */
+
+.info_contatos{
+    background: rgba(255,255,255,0.08);
+    padding: 25px;
+    border-radius: 15px;
+
+    box-shadow: var(--sombra);
+}
+
+.info_contatos ul li{
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.info_contatos ul li:last-child{
+    margin-bottom: 0;
+}
+
+.icon{
+    color: var(--destaque);
+    font-size: 1.2rem;
+    min-width: 20px;
+}
+
+.contatos{
+    word-break: break-word;
+}
+
+/* =========================
+   COLUNA ESQUERDA
+========================= */
+
+.esquerda{
+    background: var(--cor-esquerda);
+    color: var(--texto-claro);
+
+    padding: 35px;
+}
+
+.info_habilidades{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.info_habilidades h3{
+    color: var(--destaque);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.info_habilidades ul li{
+    margin-bottom: 18px;
+}
+
+/* =========================
+   BARRAS DE PROGRESSO
+========================= */
+
+.percent{
+    display: block;
+    width: 100%;
+    height: 10px;
+
+    background: var(--barra-fundo);
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    margin-top: 6px;
+}
+
+.percent div{
+    height: 100%;
+    background: var(--destaque);
+    border-radius: 20px;
+}
+
+.linguagens,
+.idiomas{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.ferramentas{
+    display: block;
+    padding: 8px 12px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 8px;
+}
+
+/* =========================
+   COLUNA DIREITA
+========================= */
+
+.direita{
+    background: var(--cor-direita);
+    padding: 35px;
+}
+
+.info_sobre{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* =========================
+   TÍTULOS
+========================= */
+
+.titulo{
+    color: var(--cor-topo);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--destaque);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* =========================
+   FORMAÇÃO
+========================= */
+
+.info_formacao ul li{
+    margin-bottom: 25px;
+}
+
+.info_formacao h5{
+    color: #64748b;
+    margin-bottom: 6px;
+}
+
+.info_formacao h4{
+    margin-bottom: 5px;
+}
+
+/* =========================
+   EXPERIÊNCIAS
+========================= */
+
+.box{
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 25px;
+
+    padding: 20px;
+    margin-bottom: 20px;
+
+    background: white;
+    border-radius: 15px;
+
+    box-shadow: var(--sombra);
+}
+
+.empresa h5:first-child{
+    color: var(--destaque);
+    margin-bottom: 8px;
+}
+
+.cargo h4{
+    margin-bottom: 10px;
+    color: var(--cor-topo);
+}
+
+.cargo p{
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+a{
+    transition: 0.3s;
+}
+
+a:hover{
+    color: var(--destaque);
+}
+
+/* =========================
+   RESPONSIVIDADE TABLET
+========================= */
+
+@media (max-width: 1024px){
+
+    .container{
+        grid-template-columns: 1fr;
+    }
+
+    .topo{
+        grid-column: auto;
+    }
+
+    .info_pessoais{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .sobre_mim{
+        min-height: auto;
+    }
+
+    .esquerda,
+    .direita{
+        width: 100%;
+    }
+
+    .box{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================
+   RESPONSIVIDADE CELULAR
+========================= */
+
+@media (max-width: 768px){
+
+    .topo{
+        padding: 25px;
+    }
+
+    .esquerda,
+    .direita{
+        padding: 25px;
+    }
+
+    .info_imagem h1{
+        font-size: 1.6rem;
+    }
+
+    .info_imagem h2{
+        font-size: 1rem;
+    }
+
+    .foto-perfil{
+        width: 180px;
+        height: 180px;
+    }
+
+    .info_contatos ul li{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .box{
+        padding: 15px;
+    }
+}

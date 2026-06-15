@@ -1,3 +1,34 @@
+<?php
+$nome = "Kaio Duarte Januário";
+$numero = "+55 (27) 9 9244-8718";
+$profissao = "Desenvolvedor Web";
+$email = "kaioduarte1528@gmail.com";
+$linkedin = "linkedin.com/in/kaio-duarte";
+$git = "github.com/kjanuario";
+$local = "Espirito Santo, Brasil";
+$liguagens = [
+    "HTML5",
+    "CSS3",
+    "JavaSript",
+    "PHP",
+    "Java",
+    "SQL/PL-SQL",
+    "Terminal",
+];
+$ferramentas = [
+    "VSCode",
+    "Oracle SQL Developer",
+    "JasperSoft",
+    "iReport",
+    "Sankhya",
+];
+$idiomas = [
+    "Português (Brasil)",
+    "Inglês",
+    "Espanhol",
+];
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -31,31 +62,31 @@
                         </span>
                     </div>
                     <div class="info_imagem">
-                        <h1>Kaio Duarte Januário</h1>
-                        <h2>Desenvolvedor Web</h2>
+                        <h1><?= $nome ?></h1>
+                        <h2><?= $profissao ?></h2>
                         <img src="imagens/foto.jpg" alt="Foto de Perfil" class="foto-perfil">
                     </div>
                     <div class="info_contatos">
                         <ul> 
                             <li>
                                 <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-                                <span class="contatos">+55 (27) 9 9244-8718</span>
+                                <span class="contatos"><?= $numero ?></span>
                             </li>
                             <li>
                                 <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
-                                <span class="contatos">kaioduarte1528@gmail.com</span>
+                                <span class="contatos"><?= $email ?></span>
                             </li>
                             <li>
                                 <span class="icon"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
-                                <a href="https://www.linkedin.com/in/kaio-duarte" target="_blank"><span class="contatos">linkedin.com/in/kaio-duarte</span></a>
+                                <a href="https://www.linkedin.com/in/kaio-duarte" target="_blank"><span class="contatos"><?= $linkedin ?></span></a>
                             </li>
                             <li>
                                 <span class="icon"><i class="fa fa-github" aria-hidden="true"></i></span>
-                                <a href="https://github.com/kjanuario" target="_blank"><span class="contatos">github.com/kjanuario</span></a>
+                                <a href="https://github.com/kjanuario" target="_blank"><span class="contatos"><?= $git ?></span></a>
                             </li>
                             <li>
                                 <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-                                <span class="contatos">Espirito Santo, Brasil</span>
+                                <span class="contatos"><?= $local ?></span>
                             </li>
                         </ul>
                     </div>
@@ -69,43 +100,43 @@
                         <h3>Linguagens</h3>
                         <ul>
                             <li>
-                                <span class="linguagens">HTML5</span>
+                                <span class="linguagens"><?= $liguagens[0] ?></span>
                                 <span class="percent">
                                     <div style="width: 40%;"></div>
                                 </span>
                             </li>
                             <li>
-                                <span class="linguagens">CSS3</span>
+                                <span class="linguagens"><?= $liguagens[1] ?></span>
                                 <span class="percent">
                                     <div style="width: 20%;"></div>
                                 </span>
                             </li>
                             <li>
-                                <span class="linguagens">JavaScript</span>
+                                <span class="linguagens"><?= $liguagens[2] ?></span>
                                 <span class="percent">
                                     <div style="width: 30%;"></div>
                                 </span>
                             </li>
                             <li>
-                                <span class="linguagens">PHP</span>
+                                <span class="linguagens"><?= $liguagens[3] ?></span>
                                 <span class="percent">
                                     <div style="width: 10%;"></div>
                                 </span>
                             </li>
                             <li>
-                                <span class="linguagens">Java</span>
+                                <span class="linguagens"><?= $liguagens[4] ?></span>
                                 <span class="percent">
                                     <div style="width: 10%;"></div>
                                 </span>
                             </li>
                             <li>
-                                <span class="linguagens">SQL/PL-SQL</span>
+                                <span class="linguagens"><?= $liguagens[5] ?></span>
                                 <span class="percent">
                                     <div style="width: 60%;"></div>
                                 </span>
                             </li>
                             <li>
-                                <span class="linguagens">Terminal</span>
+                                <span class="linguagens"><?= $liguagens[6] ?></span>
                                 <span class="percent">
                                     <div style="width: 30%;"></div>
                                 </span>
@@ -116,19 +147,19 @@
                         <h3>Ferramentas</h3>
                         <ul>
                             <li>
-                                <span class="ferramentas">VSCode</span>
+                                <span class="ferramentas"><?= $ferramentas[0] ?></span>
                             </li>
                             <li>
-                                <span class="ferramentas">Oracle SQL Developer</span>
+                                <span class="ferramentas"><?= $ferramentas[1] ?></span>
                             </li>
                             <li>
-                                <span class="ferramentas">JasperSoft</span>
+                                <span class="ferramentas"><?= $ferramentas[2] ?></span>
                             </li>
                             <li>
-                                <span class="ferramentas">iReport</span>
+                                <span class="ferramentas"><?= $ferramentas[3] ?></span>
                             </li>
                             <li>
-                                <span class="ferramentas">Sankhya</span>
+                                <span class="ferramentas"><?= $ferramentas[4] ?></span>
                             </li>
                         </ul>
                     </div>
@@ -136,19 +167,19 @@
                         <h3>Idiomas</h3>
                         <ul>
                             <li>
-                                <span class="idiomas">Português (Brasil)</span>
+                                <span class="idiomas"><?= $idiomas[0] ?></span>
                                 <span class="percent">
                                     <div style="width: 100%;"></div>
                                 </span>
                             </li>
                             <li>
-                                <span class="idiomas">Inglês</span>
+                                <span class="idiomas"><?= $idiomas[1] ?></span>
                                 <span class="percent">
                                     <div style="width: 40%;"></div>
                                 </span>
                             </li>
                             <li>
-                                <span class="idiomas">Espanhol</span>
+                                <span class="idiomas"><?= $idiomas[2] ?></span>
                                 <span class="percent">
                                     <div style="width: 20%;"></div>
                                 </span>
